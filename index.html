@@ -4,84 +4,87 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>Music Academy</title>
 </head>
 <body>
+  <div class="container-xl p-3 mb-2 bg-info text-dark">
+  <h1 class="container-fluid">Youth Music Academy</h1>
+  <p class="container-fluid">Giving your dreams a little push. </p>
   
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+      <input placeholder="Your Name Here" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+      <input placeholder="Your Email Here" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <h3 class="container-fluid"> What would you like to study?</h3>
+    <div class="form-check form-check-inline ">
+      <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label container-fluid" for="inlineRadio1">Guitar</label>
+    </div>
+    <div class="form-check form-check-inline ">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label container-fluid" for="inlineRadio2">Bass</label>
+    </div>
+    <div class="form-check form-check-inline ">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+      <label class="form-check-label container-fluid" for="inlineRadio3">Piano</label>
+    </div>
+    <div class="form-check form-check-inline ">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+      <label class="form-check-label container-fluid" for="inlineRadio3">Drums</label>
+    </div>
+    <h3 class="container-fluid">What option better describes your skill level</h3>
+    <div class="form-check form-check-inline container-fluid">
+      <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label container-fluid" for="inlineRadio1">I have never played a instrument before.</label>
+    </div>
+    <div class="form-check form-check-inline container-fluid">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label container-fluid" for="inlineRadio2">I have tried to teach myself, but I gave up.</label>
+    </div>
+    <div class="form-check form-check-inline container-fluid">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+      <label class="form-check-label container-fluid" for="inlineRadio3">I have an intermediate level of proficiency. </label>
+    </div>
+    <div class="form-check form-check-inline container-fluid">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+      <label class="form-check-label container-fluid" for="inlineRadio3">I am an advanced player looking to deepen my musical theory knowledge.</label>
+    </div>
+    <h3 class="container-fluid">Please tells us a little more about yourself.</h3>
+    <div class="input-group container-fluid">
+      <span class="input-group-text">Tells about yourself</span>
+      <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <br>
+      <button class="btn btn-light" type="button">Submit</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
 </body>
 </html>
-<div id="maindiv">
-    <header id="header" class="header">
-      <h2 id="title">Music Academy</h2>
-      <p id="description" class="description-text"><em>Giving form to your dreams</em></p>
-    </header>
- <form id="survey-form"> 
-  <div class="form-group">
-    <label>Name</label>
-    <input type="text" 
-         id="name" 
-         name="name"
-         placeholder="Enter your name here"
-         class="form-name"
-         required> </input>
- </div>
- <div class="form-group">
-    <label>Email</label>
-    <input type="email"
-           id="email"
-           name="email"
-           placeholder="Enter your email here"
-           class="form-email"
-           required></input>
-  </div>
-  <div class="form-group">
-    <label>Age<span class="optional"> (optional)</span></label>
-    <input type="number"
-           id="age"
-           name="age" ç
-           placeholder="Age"
-           min="10"
-           max="99"
-           class="form-control"></input>
-  </div>
- 
-  <div class="form-group" name="radio">  
-    <label>What would you like to study?</label>
-    <p class="choice-description"> Select one Option</p>
-    <label><input type="radio" value="drums" name="choices" class="choice">Drums</label>
-    <label><input type="radio" value="guitar" name="choices" class="choice">Guitar</label>
-    <label><input type="radio" value="bass" name="choices" class="choice">Bass</label>
-    <label><input type="radio" value="piano" name="choices" class="choice">Piano</label>
-    <label><input type="radio" value="voice" name="choices" class="choice">Voice</label>
-   
-  </div>
-    
-  <div class="form-group">
-    <label> What option better describes you ?</label>
-    <select id="dropdown" class="formdropdown" required>
-      <option disabled selected value class="choice-description"> Select one Option</option>
-      <option>I am a novice (never played before)</option>
-      <option>I have tried to learn before (gave up after a few months)</option>
-      <option>I have been playing for a few years (need help with music theory)</option>
-    </select>
-    </div> 
-  <div class="form-group">
-      <label> Please tell us a little about yourself</label>
-      <textarea id="comments"
-                class="input-textarea"
-                name="comment"
-                placeholder="Enter your comment here...">
-      </textarea>
-    </div>
-    <div class="form-group">
-         <button type="submit"
-                 class="submit"
-                 id="submit">
-           Submit
-      </button>
-    </form>
-  </div>
- 
 
   
   
