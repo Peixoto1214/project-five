@@ -1,0 +1,75 @@
+  <div id="maindiv">
+    <header id="header" class="header">
+      <h2 id="title">Music Academy</h2>
+      <p id="description" class="description-text"><em>Giving form to your dreams</em></p>
+    </header>
+ <form id="survey-form"> 
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" 
+         id="name" 
+         name="name"
+         placeholder="Enter your name here"
+         class="form-name"
+         required> </input>
+ </div>
+ <div class="form-group">
+    <label>Email</label>
+    <input type="email"
+           id="email"
+           name="email"
+           placeholder="Enter your email here"
+           class="form-email"
+           required></input>
+  </div>
+  <div class="form-group">
+    <label>Age<span class="optional"> (optional)</span></label>
+    <input type="number"
+           id="age"
+           name="age" ç
+           placeholder="Age"
+           min="10"
+           max="99"
+           class="form-control"></input>
+  </div>
+ 
+  <div class="form-group" name="radio">  
+    <label>What would you like to study?</label>
+    <p class="choice-description"> Select one Option</p>
+    <label><input type="radio" value="drums" name="choices" class="choice">Drums</label>
+    <label><input type="radio" value="guitar" name="choices" class="choice">Guitar</label>
+    <label><input type="radio" value="bass" name="choices" class="choice">Bass</label>
+    <label><input type="radio" value="piano" name="choices" class="choice">Piano</label>
+    <label><input type="radio" value="voice" name="choices" class="choice">Voice</label>
+   
+  </div>
+    
+  <div class="form-group">
+    <label> What option better describes you ?</label>
+    <select id="dropdown" class="formdropdown" required>
+      <option disabled selected value class="choice-description"> Select one Option</option>
+      <option>I am a novice (never played before)</option>
+      <option>I have tried to learn before (gave up after a few months)</option>
+      <option>I have been playing for a few years (need help with music theory)</option>
+    </select>
+    </div> 
+  <div class="form-group">
+      <label> Please tell us a little about yourself</label>
+      <textarea id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here...">
+      </textarea>
+    </div>
+    <div class="form-group">
+         <button type="submit"
+                 class="submit"
+                 id="submit">
+           Submit
+      </button>
+    </form>
+  </div>
+ 
+
+  
+  
